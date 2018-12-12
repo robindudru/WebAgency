@@ -122,10 +122,9 @@ header nav {
 	position:absolute;
 	display:block;
 	height:10vw;
-	width:10vw;
+	width:5vw;
 	margin:auto 0;
 	background-color:rgba(92,173,211,0.4);
-	border-radius:50%;
 }
 
 .arrow:hover{
@@ -134,11 +133,13 @@ header nav {
 }
 
 .prev {
-	left:-5vw;
+	left:0;
+	border-radius:0 8vw 8vw 0;
 }
 
 .next {
-	right:-5vw;
+	right:0;
+	border-radius: 8vw 0 0 8vw;
 }
 
 .fa-angle-right {
@@ -155,7 +156,7 @@ header nav {
 	color:white;
 	height:100%;
 	top:14%;
-	left:5vw;
+	left:0;
 	font-size: 7vw;
 }
 

@@ -90,6 +90,7 @@ p {
 
 section {
 	width:100%;
+	position:relative;
 	padding-bottom: 10vh;
 }
 
@@ -124,6 +125,11 @@ section {
 	color:#5CADD3;
 	flex-grow:1;
 	font-size:1vw;
+}
+
+#services_anchor, #projects_anchor{
+	position: absolute;
+	bottom:4vw;
 }
 
 /*########*/
@@ -163,6 +169,17 @@ header nav {
 	justify-content: space-between;
 }
 
+header nav div {
+	width:7vw;
+	height:100%;
+	margin:auto 0;
+}
+
+header nav div:hover{
+	border-top:3px solid #5CADD3;
+	color:#0e0e0e;
+}
+
 header nav a {
 	color:#686C71;
 	text-decoration: none;
@@ -179,18 +196,6 @@ header nav a {
 	padding:0 5%;
 }
 
-.menu_item:hover{
-	border-top:3px solid #5CADD3;
-}
-
-.menu_item:hover a {
-	color:#0e0e0e;
-}
-
-#services_anchor{
-	position: absolute;
-	bottom:4vw;
-}
 
 /*########*/
 /* Slider */
@@ -213,10 +218,9 @@ header nav a {
 	position:absolute;
 	display:block;
 	height:4vw;
-	width:4vw;
+	width:2vw;
 	margin:auto 0;
 	background-color:rgba(0,0,0,0.2);
-	border-radius:50%;
 }
 
 .arrow:hover{
@@ -225,11 +229,13 @@ header nav a {
 }
 
 .prev {
-	left:-2vw;
+	border-radius:0 8vw 8vw 0;
+	left:0;
 }
 
 .next {
-	right:-2vw;
+	right:0;
+	border-radius: 8vw 0 0 8vw;
 }
 
 .fa-angle-right {
@@ -391,7 +397,7 @@ header nav a {
 	display:flex;
 	width:20%;
 	background-color: #E5E5E5;
-	border-radius: 10px;
+	border-radius: 5px;
 	font-size: 0.9vw;
 }
 
@@ -404,7 +410,7 @@ header nav a {
 
 #allworks:checked ~ nav .allworks {
 	color:white;
-	border-radius:10px 0 0 10px;
+	border-radius:5px 0 0 5px;
 	background-color:#5CADD3;
 	box-shadow: 0 -3px 0 #468CAD inset;
 }
@@ -418,7 +424,7 @@ header nav a {
 
 #portfolio:checked ~ nav .portfolio {
 	color:white;
-	border-radius: 0 10px 10px 0;
+	border-radius: 0 5px 5px 0;
 	background-color:#5CADD3;
 	box-shadow: 0 -3px 0 #468CAD inset;
 }
@@ -476,7 +482,7 @@ header nav a {
 .card_details {
 	opacity:0;
 	position:absolute;
-	bottom:1%;
+	bottom:0.2vw;
 	height:30%;
 	background-color: rgba(0,0,0,0.2);
 	width:20vw;
@@ -484,7 +490,7 @@ header nav a {
 	transition: 0.5s;
 }
 
-.card img:hover ~ .card_details {
+#projects_content img:hover ~ .card_details, .card_details:hover {
 	opacity:1;
 }
 
