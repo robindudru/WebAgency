@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Agency</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_smartphones.css">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+	<header>
+		<div id="header_wrapper">
+			<div id="logo">
+			</div>
+			<nav>
+				<div class="menu_item">
+					<a href="#">Accueil</a>
+				</div>
+				<div class="menu_item">
+					<a href="#servicesAnchor">Services</a>
+				</div>
+				<div class="menu_item">
+					<a href="#projectsAnchor">Portfolio</a>
+				</div>
+				<div class="menu_item">
+					<a href="#contact_anchor">Contact</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<section id="slider">
+		<div id="slide_1">
+			<div class="arrow prev"><a href="#slide_2"><i class="fas fa-angle-left"></i></a></div>
+			<div class="arrow next"><a href="#slide_2"><i class="fas fa-angle-right"></i></a></div>
+			<div class="slide_content">
+				<h2><span class="blue">WEBAGENCY</span>: L'AGENCE DE TOUS VOS PROJETS!</h2>
+				<h4>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</h4>
+				<a href="">
+					<div class="slider_button">
+						Plus d'infos
+					</div>
+				</a>
+			</div>
+			<div id="slider_position_1"></div>
+		</div>
+		<div id="slide_2">
+			<div class="arrow prev"><a href="#slide_1"><i class="fas fa-angle-left"></i></a></div>
+			<div class="arrow next"><a href="#slide_1"><i class="fas fa-angle-right"></i></a></div>
+			<div class="slide_content">
+				<h2>ETENDEZ LA PRESENCE DE <span class="blue">VOTRE MARQUE</span> SUR LE WEB</h2>
+				<h4>Avec une identité visuelle forte, vous marquerez les esprits !</h4>
+				<a href="">
+					<div class="slider_button">
+						Allons-y
+					</div>
+				</a>
+			</div>
+			<div id="slider_position_2"></div>
+		</div>
+	<span id="services_anchor"></span>
+	</section>
+	<section id="services">
+		<div class="section_header">
+			<h1>NOS SERVICES</h1>
+			<div class="section_header_hr">
+				<div class="section_header_hr_line"></div>
+				<div class="fas fa-circle"></div>
+				<div class="section_header_hr_line"></div>
+			</div>
+			<p>Nous conçevons avec vous un site internet à votre image. La seule limite: votre imagination. Vous avez les idées, nous les réalisons.</p> 
+		</div>
+		<div id="services_content">
+			<div id="services_left">
+				<img src="assets/img/services/main-feature.png" alt="Nos services" />
+			</div>
+			<div id="services_right">
+				<div class="services_row">
+					<div class="services_row_left">
+						<div class="services_row_icon">
+							<div class="fa fa-chart-line"></div>
+							<div class="fas fa-circle"></div>
+						</div>
+					</div>
+					<div class="services_row_right">
+						<h3>UX design</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+					</div>
+				</div>
+				<div class="services_row">
+					<div class="services_row_left">
+						<div class="services_row_icon">
+							<div class="fa fa-cubes"></div>
+							<div class="fas fa-circle"></div>
+						</div>
+					</div>
+					<div class="services_row_right">
+						<h3>UI design</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+					</div>
+				</div>
+				<div class="services_row">
+					<div class="services_row_left">
+						<div class="services_row_icon">
+							<div class="fa fa-chart-pie"></div>
+							<div class="fas fa-circle"></div>
+						</div>
+					</div>
+					<div class="services_row_right">
+						<h3>SEO</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<span id="projects_anchor"></span>
+	</section>
+	<section id="projects">
+		<div class="section_header">
+			<h1>NOS PROJETS</h1>
+			<div class="section_header_hr">
+				<div class="section_header_hr_line"></div>
+				<div class="fas fa-circle"></div>
+				<div class="section_header_hr_line"></div>
+			</div>
+			<p>Retrouvez ici une sélection de notre travail. Ces clients nous ont fait confiance, à vous d'entrer dans le club !</p> 
+		</div>
+		<input id="allworks" type="radio" name="projects_nav_input" checked />
+		<input id="creative" type="radio" name="projects_nav_input" />
+		<input id="corporate" type="radio" name="projects_nav_input" />
+		<input id="portfolio" type="radio" name="projects_nav_input" />
+		<nav>
+			<div id="projects_nav">
+					<div class="allworks"><label for="allworks">All Works</label><i class="fas fa-caret-down"></i></div>
+					<div class="creative"><label for="creative">Creative<i class="fas fa-caret-down"></i></label></div>
+					<div class="corporate"><label for="corporate">Corporate<i class="fas fa-caret-down"></i></label></div>
+					<div class="portfolio"><label for="portfolio">Portfolio<i class="fas fa-caret-down"></i></label></div>
+			</div>
+		</nav>
+		<div id="projects_content">
+			<div class="card allworks creative">
+				<img src="assets/img/projects/01.jpg" alt="Projet Lorem Ipsum" />
+				<div class="card_details">
+					<div class="eye"><i class="fas fa-eye"></i></div>
+					<h4>Portfolio Item 1</h4>
+					<p class="white">Lorem ipsum dolor sit</p>
+				</div>
+			</div>
+			<div class="card allworks creative">
+				<img src="assets/img/projects/02.jpg" alt="Projet Lorem Ipsum" />
+				<div class="card_details">
+					<div class="eye"><i class="fas fa-eye"></i></div>
+					<h4>Portfolio Item 2</h4>
+					<p class="white">Lorem ipsum dolor sit</p>
+				</div>
+			</div>
+			<div class="card allworks corporate">
+				<img src="assets/img/projects/03.jpg" alt="Projet Lorem Ipsum" />
+			<div class="card_details">
+					<div class="eye"><i class="fas fa-eye"></i></div>
+					<h4>Portfolio Item 3</h4>
+					<p class="white">Lorem ipsum dolor sit</p>
+				</div>
+			</div>
+			<div class="card allworks creative">
+				<img src="assets/img/projects/04.jpg" alt="Projet Lorem Ipsum" />
+				<div class="card_details">
+					<div class="eye"><i class="fas fa-eye"></i></div>
+					<h4>Portfolio Item 4</h4>
+					<p class="white">Lorem ipsum dolor sit</p>
+				</div>
+			</div>
+			<div class="card allworks portfolio">
+				<img src="assets/img/projects/05.jpg" alt="Projet Lorem Ipsum" />
+				<div class="card_details">
+					<div class="eye"><i class="fas fa-eye"></i></div>
+					<h4>Portfolio Item 5</h4>
+					<p class="white">Lorem ipsum dolor sit</p>
+				</div>
+			</div>
+			<div class="card allworks corporate">
+				<img src="assets/img/projects/06.jpg" alt="Projet Lorem Ipsum" />
+				<div class="card_details">
+					<div class="eye"><i class="fas fa-eye"></i></div>
+					<h4>Portfolio Item 6</h4>
+					<p class="white">Lorem ipsum dolor sit</p>
+				</div>
+			</div>
+			<div class="card allworks portofolio">
+				<img src="assets/img/projects/07.jpg" alt="Projet Lorem Ipsum" />
+				<div class="card_details">
+					<div class="eye"><i class="fas fa-eye"></i></div>
+					<h4>Portfolio Item 7</h4>
+					<p class="white">Lorem ipsum dolor sit</p>
+				</div>
+			</div>
+			<div class="card allworks portfolio">
+				<img src="assets/img/projects/08.jpg" alt="Projet Lorem Ipsum" />
+				<div class="card_details">
+					<div class="eye"><i class="fas fa-eye"></i></div>
+					<h4>Portfolio Item 8</h4>
+					<p class="white">Lorem ipsum dolor sit</p>
+				</div>
+			</div>
+		</div>
+		<span id="contact_anchor"></span>
+	</section>
+	<section id="contact">
+		<iframe height="600" width="450" src="https://www.google.com/maps/embed/v1/place?q=25%20rue%20d'hauteville%2075010%20paris&key=AIzaSyAswcoz3UP2BTrQbrc9t6W8sMk3kIajWU4" allowfullscreen></iframe>
+		<div id="contact_box">
+			<h2 class="black">Contact Info</h2>
+			<h4 class="grey">WebAgency SAS</h4>
+			<p class="grey">
+				25 rue d'Hauteville 75010 Paris <br />
+				<span class="dashed_underline">Tel:</span> 01 02 03 04 05
+			</p>
+			<form action="dummypage.php" method="POST" name="contact_form">
+				<input type="text" name="name" value="Name"><br />
+				<input type="email" name="email" value="Email"><br />
+				<input type="text" name="subject" value="Subject"><br />
+				<textarea>Message</textarea><br />
+				<input type="submit" value="Envoyer">
+			</form>
+		</div>
+	</section>
+</body>
+</html>
