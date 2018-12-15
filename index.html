@@ -6,7 +6,7 @@
   <title>Web Agency</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style_smartphones.css">
-  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 <body>
 
@@ -14,7 +14,7 @@
 		<div id="header_wrapper">
 			<div id="logo">
 			</div>
-			<nav>
+			<nav id="nav_desktop">
 				<a href="#">
 					<div class="menu_item">
 						Accueil
@@ -35,6 +35,27 @@
 						Contact
 					</div>
 				</a>	
+			</nav>
+			<nav id="nav_smartphone">
+				<a href="#side_panel"><i class="fas fa-bars"></i></a>
+				<div id="side_panel">
+						<div id="close_icon"><a href="#close_panel"><i class="fas fa-times"></i></a></div>
+						<div id="smartphone_nav_content">
+							<div>
+								<a href="#">Accueil</a>
+							</div>
+							<div>
+								<a href="#services_anchor">Services</a>
+							</div>
+							<div>
+								<a href="#projects_anchor">Portfolio</a>
+							</div>
+							<div>
+								<a href="#contact_anchor">Contact</a>
+							</div>
+						</div>
+				</div>
+				<span id="close_panel"></span>
 			</nav>
 		</div>
 	</header>
@@ -129,7 +150,7 @@
 			<h1>NOS PROJETS</h1>
 			<div class="section_header_hr">
 				<div class="section_header_hr_line"></div>
-				<div class="fas fa-circle"></div>
+				<div class="section_header_icon"><i class="fas fa-circle"></i></div>
 				<div class="section_header_hr_line"></div>
 			</div>
 			<p>Retrouvez ici une sélection de notre travail. Ces clients nous ont fait confiance, à vous d'entrer dans le club !</p> 
@@ -148,74 +169,73 @@
 		</nav>
 		<div id="projects_content">
 			<div class="card allworks creative">
-				<img src="assets/img/projects/01.jpg" alt="Projet Lorem Ipsum" />
+				<img src="assets/img/projects/01.jpg" alt="Projet Creative" />
 				<div class="card_details">
 					<div class="eye"><i class="fas fa-eye"></i></div>
-					<h4>Portfolio Item 1</h4>
-					<p class="white">Lorem ipsum dolor sit</p>
+					<h4>Projet Creative #1</h4>
+					<p class="white">Premier projet Creative</p>
 				</div>
 			</div>
 			<div class="card allworks creative">
-				<img src="assets/img/projects/02.jpg" alt="Projet Lorem Ipsum" />
+				<img src="assets/img/projects/02.jpg" alt="Projet Creative #2" />
 				<div class="card_details">
 					<div class="eye"><i class="fas fa-eye"></i></div>
-					<h4>Portfolio Item 2</h4>
-					<p class="white">Lorem ipsum dolor sit</p>
+					<h4>Projet Creative #2</h4>
+					<p class="white">Deuxième projet Creative</p>
 				</div>
 			</div>
 			<div class="card allworks corporate">
-				<img src="assets/img/projects/03.jpg" alt="Projet Lorem Ipsum" />
+				<img src="assets/img/projects/03.jpg" alt="Projet Corporate" />
 			<div class="card_details">
 					<div class="eye"><i class="fas fa-eye"></i></div>
-					<h4>Portfolio Item 3</h4>
-					<p class="white">Lorem ipsum dolor sit</p>
+					<h4>Projet Corporate #1</h4>
+					<p class="white">Premier projet Corporate</p>
 				</div>
 			</div>
 			<div class="card allworks creative">
-				<img src="assets/img/projects/04.jpg" alt="Projet Lorem Ipsum" />
+				<img src="assets/img/projects/04.jpg" alt="Projet Creative #3" />
 				<div class="card_details">
 					<div class="eye"><i class="fas fa-eye"></i></div>
-					<h4>Portfolio Item 4</h4>
-					<p class="white">Lorem ipsum dolor sit</p>
+					<h4>Projet Creative #3</h4>
+					<p class="white">Troisième projet Creative</p>
 				</div>
 			</div>
 			<div class="card allworks portfolio">
-				<img src="assets/img/projects/05.jpg" alt="Projet Lorem Ipsum" />
+				<img src="assets/img/projects/05.jpg" alt="Projet Portfolio" />
 				<div class="card_details">
 					<div class="eye"><i class="fas fa-eye"></i></div>
-					<h4>Portfolio Item 5</h4>
-					<p class="white">Lorem ipsum dolor sit</p>
+					<h4>Projet Portfolio #1</h4>
+					<p class="white">Premier projet Portfolio</p>
 				</div>
 			</div>
 			<div class="card allworks corporate">
-				<img src="assets/img/projects/06.jpg" alt="Projet Lorem Ipsum" />
+				<img src="assets/img/projects/06.jpg" alt="Projet Corporate #2" />
 				<div class="card_details">
 					<div class="eye"><i class="fas fa-eye"></i></div>
-					<h4>Portfolio Item 6</h4>
-					<p class="white">Lorem ipsum dolor sit</p>
-				</div>
-			</div>
-			<div class="card allworks portofolio">
-				<img src="assets/img/projects/07.jpg" alt="Projet Lorem Ipsum" />
-				<div class="card_details">
-					<div class="eye"><i class="fas fa-eye"></i></div>
-					<h4>Portfolio Item 7</h4>
-					<p class="white">Lorem ipsum dolor sit</p>
+					<h4>Projet Corporate #2</h4>
+					<p class="white">Deuxième projet Corporate</p>
 				</div>
 			</div>
 			<div class="card allworks portfolio">
-				<img src="assets/img/projects/08.jpg" alt="Projet Lorem Ipsum" />
+				<img src="assets/img/projects/07.jpg" alt="Projet Portfolio #2" />
 				<div class="card_details">
 					<div class="eye"><i class="fas fa-eye"></i></div>
-					<h4>Portfolio Item 8</h4>
-					<p class="white">Lorem ipsum dolor sit</p>
+					<h4>Projet Portfolio #2</h4>
+					<p class="white">Deuxième projet Portfolio</p>
+				</div>
+			</div>
+			<div class="card allworks portfolio">
+				<img src="assets/img/projects/08.jpg" alt="Projet Portfolio #3" />
+				<div class="card_details">
+					<div class="eye"><i class="fas fa-eye"></i></div>
+					<h4>Projet Portfolio #3</h4>
+					<p class="white">Troisième projet Portfolio</p>
 				</div>
 			</div>
 		</div>
 		<span id="contact_anchor"></span>
 	</section>
 	<section id="contact">
-		<iframe height="600" width="450" src="https://www.google.com/maps/embed/v1/place?q=25%20rue%20d'hauteville%2075010%20paris&key=AIzaSyAswcoz3UP2BTrQbrc9t6W8sMk3kIajWU4" allowfullscreen></iframe>
 		<div id="contact_box">
 			<h2 class="black">Contact Info</h2>
 			<h4 class="grey">WebAgency SAS</h4>
@@ -231,6 +251,7 @@
 				<input type="submit" value="Envoyer">
 			</form>
 		</div>
+		<iframe height="600" width="450" src="https://www.google.com/maps/embed/v1/place?q=25%20rue%20d'hauteville%2075010%20paris&key=AIzaSyAswcoz3UP2BTrQbrc9t6W8sMk3kIajWU4" allowfullscreen></iframe>
 	</section>
 </body>
 </html>
