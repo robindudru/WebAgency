@@ -121,9 +121,18 @@ section {
 	flex-grow: 6;
 }
 
+.section_header_icon {
+	height:1.5vw;
+	width:1.5vw;
+	display:flex;
+	background:white;
+	border-radius: 50%;
+}
+
 .section_header_hr .fa-circle {
 	color:#5CADD3;
 	flex-grow:1;
+	margin:auto 0;
 	font-size:1vw;
 }
 
@@ -156,9 +165,9 @@ header {
 }
 
 #logo {
-	height:70%;
+	height:100%;
 	width:25%;
-	background: url(./../assets/img/logo.png) no-repeat;
+	background: url(./../assets/img/logo.png) center left no-repeat;
 	background-size: contain;
 }
 
@@ -167,6 +176,11 @@ header nav {
 	width:35%;
 	display:flex;
 	justify-content: space-between;
+}
+
+#nav_smartphone {
+	width:0;
+	display:none;
 }
 
 header nav div {
@@ -395,7 +409,7 @@ header nav a {
 
 #projects_nav {
 	display:flex;
-	width:20%;
+	width:25%;
 	background-color: #E5E5E5;
 	border-radius: 5px;
 	font-size: 0.9vw;
@@ -405,7 +419,7 @@ header nav a {
 	font-family: RobotoBold;
 	width:25%;
 	text-align: center;
-	padding:0.7vw 0.5vw;
+	padding:0.9vw 0.5vw;
 }
 
 #allworks:checked ~ nav .allworks {
